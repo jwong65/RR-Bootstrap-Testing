@@ -2,25 +2,26 @@ import React from 'react'
 
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container';
 import { Button } from 'react-bootstrap';
 import brandImage from '../instacart-logo.png'
 
 export default function TopBar() {
   return (
+    <div>
     <Navbar expand='lg' bg='primary' variant='dark'>
-      <Container>
-        <Navbar.Brand style={{margin: '10px 0 0 20px'}}>
-            <img src={brandImage}></img>
+        <Navbar.Brand style={{margin: '5px 0 0 20px'}}>
+            <img src={brandImage} alt='Instacart'></img>
         </Navbar.Brand>
-      </Container>
       
-      <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
-      <Navbar.Collapse id ='basic-navbar-nav' style={{display: 'flex-container', padding:"1em 10px 10px 1em"}}>
+      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Collapse id ='basic-navbar-nav'>
         <Nav className='mr-auto'></Nav>
-          <Nav.Link href='#LogTest'>Log In Test</Nav.Link>
-          <Button variant ='success'>Sign up Test</Button>
+            <Nav style={{display:'flex'}}>
+                <Nav.Link href='#LogTest'>Log In Test</Nav.Link>
+                <Button variant ='success'>Sign up Test</Button>{' '}
+            </Nav>
       </Navbar.Collapse>
     </Navbar>
+    </div>
   )
 }
