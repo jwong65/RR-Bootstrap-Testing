@@ -14,9 +14,8 @@ export default function TopBar() {
         This is a Brand.
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
-      <Navbar.Collapse id ='basic-navbar-nav'>
-        <Navbar.Text>
-        <Nav className='me-auto'>
+      <Navbar.Collapse id ='basic-navbar-nav' style={{display: 'flex', margin: '1em 0 0 1em'}}>
+        <Nav className='mr-auto'></Nav>
           <Nav.Link href='#LogTest'>Log In Test</Nav.Link>
           <Button variant ='success'>Sign up Test</Button>
           <NavDropdown id='basic-nav-dropdown' title='DropDown Testing'>
@@ -24,8 +23,6 @@ export default function TopBar() {
             <NavDropdown.Divider />
             <NavDropdown.Item>Another item</NavDropdown.Item>
           </NavDropdown>
-        </Nav>
-        </Navbar.Text>
       </Navbar.Collapse>
       </Container>
     </Navbar>
