@@ -11,13 +11,13 @@ function App() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
       <Navbar.Collapse id ='basic-navbar-nav'>
-        <Nav className='test-auto'>
-        </Nav>
         <Nav>
           <Nav.Link href='#LogTest'>Log In Test</Nav.Link>
-          <Nav className='testDropdown'>
+          <NavDropdown id='basic-nav-dropdown' title='DropDown Testing'>
             <NavDropdown.Item href=''>Action</NavDropdown.Item>
-          </Nav>
+            <NavDropdown.Divider />
+            <NavDropdown.Item>Another item</NavDropdown.Item>
+          </NavDropdown>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
