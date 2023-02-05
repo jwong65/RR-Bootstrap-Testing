@@ -4,13 +4,14 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container';
 import { Button } from 'react-bootstrap';
+import brandImage from '../instacart-logo.png'
 
 export default function TopBar() {
   return (
     <Navbar expand='lg' bg='primary' variant='dark'>
       <Container>
         <Navbar.Brand style={{margin: '10px 0 0 20px'}}>
-            This is a Brand.
+            <img src={brandImage}></img>
         </Navbar.Brand>
       </Container>
       
