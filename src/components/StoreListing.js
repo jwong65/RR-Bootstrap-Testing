@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col'
 
 export default function StoreListing() {
   return (
-    <Container fluid='lg' style={{position: 'relative'}}>
-        <Row>
+    <Container fluid='lg' style={{position: 'relative', marginTop: '40px', textAlign: 'center'}}>
+        <Row style={{justifyContent:"space-evenly", display: 'flex'}}>
             <Col sm={8}>One of 2 </Col>
             <Col sm={4}>Two of 2 </Col>
         </Row>
