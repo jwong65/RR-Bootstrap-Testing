@@ -5,10 +5,10 @@ import Col from 'react-bootstrap/Col'
 
 export default function StoreListing() {
   return (
-    <Container>
+    <Container fluid='lg' style={{position: 'relative'}}>
         <Row>
-            <Col> </Col>
-            <Col> </Col>
+            <Col sm={8}>One of 2 </Col>
+            <Col sm={4}>Two of 2 </Col>
         </Row>
         <Row>
             <Col></Col>
