@@ -7,19 +7,22 @@ export default function StoreListing() {
   return (
     <Container fluid='lg' style={{position: 'relative', marginTop: '40px', textAlign: 'center', top: '3em', fontWeight: 'bold', color: 'Red'}}>
     <Row style={{justifyContent:"space-evenly", display: 'flex'}}>
-        <Row>
-            <Col sm={8}><p>One of 2</p> </Col>
-            <Col sm={4}><p>Two of 2</p> </Col>
+        <Row xs='.5'>
+            <Col sm={8} ><p>One of 2</p> </Col>
+            <Col sm={4} ><p>Two of 2</p> </Col>
         </Row>
-        <Row>
+        <Col sm='1'></Col>
+        <Row xs='.5'>
             <Col><p>Row 2, One of 3</p></Col>
             <Col><p>Row 2, Two of 3</p></Col>
             <Col><p>Row 2, Three of 3</p></Col>
         </Row>
-        <Row>
+        <Col sm='1'></Col>
+        <Row xs='.5'>
             <Col><p>Row 3, One of 1</p></Col>
+            <Col><p>Row 3, Two of 2</p></Col>
         </Row>
-    </Row>
+    </Row >
     </Container>
   )
 }
