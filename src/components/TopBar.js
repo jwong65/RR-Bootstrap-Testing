@@ -16,7 +16,7 @@ export default function TopBar() {
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id ='basic-navbar-nav'>
         <Nav className='mr-auto'></Nav>
-            <Nav style={{display:'flex'}}>
+            <Nav style={{display:'flex', justifyContent:'space-evenly'}}>
                 <Nav.Link href='#LogTest'>Log In Test</Nav.Link>
                 <Button variant ='success'>Sign up Test</Button>{' '}
             </Nav>
